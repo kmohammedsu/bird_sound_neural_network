@@ -1,0 +1,41 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Environment folders
+.env/
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Data and model files
+*.hdf5
+*.h5
+*.npy
+*.npz
+*.pkl
+*.ckpt
+
+# OS files
+.DS_Store
+Thumbs.db
+
+
+# Poster (if large)
+poster/poster.png
+
+# User-specific files
+*.swp
+*.swo
+*.bak
+
+# VSCode and PyCharm settings
+.vscode/
+.idea/
