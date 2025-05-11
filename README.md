@@ -164,8 +164,111 @@ All were identified as House Sparrow with high confidence.
 This work demonstrates that CNNs can reliably classify bird species from audio recordings, achieving 72% accuracy on a 12-class problem. The pipeline is adaptable to other bioacoustic tasks and provides a foundation for automated wildlife monitoring systems. Future improvements could include data augmentation, advanced architectures, and addressing class imbalance.
 
 ---
+## 8.Replication Guide
 
-## 8. References
+Follow these steps to replicate the project on either Windows or macOS.
+
+---
+
+### 1. Environment Setup
+
+#### Windows
+
+1. **Install Python**
+   - Recommended: Install Python via [Microsoft Store](https://apps.microsoft.com/detail/python-3.12/9NJ46SX7X90P)
+   - Or download from [python.org](https://www.python.org/downloads/)
+
+2. **Create and Activate Virtual Environment**
+```
+python -m venv birdenv
+.\birdenv\Scripts\activate
+```
+
+
+#### macOS
+
+1. **Install Python**
+- Recommended: Use Homebrew
+  ```
+  brew install python@3.12
+  ```
+- Or download from [python.org](https://www.python.org/downloads/)
+
+2. **Create and Activate Virtual Environment**
+```
+python3 -m venv birdenv
+source birdenv/bin/activate
+```
+
+---
+
+### 2. Install Dependencies
+
+Install all required Python packages:
+```
+pip install -r requirements.txt
+```
+
+
+---
+
+### 3. Run Data Preprocessing
+
+Navigate to the `scripts` directory and run the preprocessing script.  
+Ensure your MP3 files are in the appropriate data folder (`data/external_test_clips/`).
+```
+cd scripts
+python data_preprocessing.py
+```
+
+---
+
+### 4. Execute Notebooks in Order
+
+1. **Binary Classification**  
+   Open and run:
+```
+notebooks/01_binary_classification.ipynb
+```
+
+- Trains model for Northern Flicker vs. House Finch.
+
+2. **Multiclass Classification**  
+Open and run:
+```
+notebooks/02_multiclass_classification.ipynb
+```
+- Trains model for all 12 bird species.
+
+3. **External Test Inference**  
+Open and run:
+```
+notebooks/03_external_test_data.ipynb
+```
+
+- Predicts species for new MP3 files in `data/external_test_clips/`.
+
+
+
+
+
+---
+
+### Verification
+
+1. Confirm Python version:
+```
+python --version # Should be 3.10 or higher
+```
+2. Check critical packages:
+```
+pip show librosa tensorflow h5py
+```
+
+---
+
+
+## 9. References
 
 1. **Spectrogram Conversion Code**:  
    [Prof. Mendible's GitHub](https://github.com/mendible/5322/tree/main/Homework%203)  
