@@ -274,18 +274,14 @@ pip show librosa tensorflow h5py
    [Prof. Mendible's GitHub](https://github.com/mendible/5322/tree/main/Homework%203)  
    *(Used for MP3-to-spectrogram preprocessing)*
 
-2. **Full Project Code**:  
-   [kmohammedsu/bird_sound_neural_network](https://github.com/kmohammedsu/bird_sound_neural_network)  
-   *(Contains all notebooks, models, and datasets)*
 
-3. **Librosa Documentation**:  
+2. **Librosa Documentation**:  
    [librosa.org/doc](https://librosa.org/doc/)  
    *(Audio loading, STFT, and spectrogram generation)*
 
-4. **TensorFlow Documentation**:  
+3. **TensorFlow Documentation**:  
    [tensorflow.org/api_docs](https://www.tensorflow.org/api_docs)  
    *(CNN implementation and training)*
 
 ---
 
-*For full details, code, and results, see the project repository linked above.*
